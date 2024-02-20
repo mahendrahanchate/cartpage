@@ -1,0 +1,42 @@
+.cart-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .cart-icon {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .badge {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  .icon {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .icon:hover svg {
+    font-size: 24px; /* Increase font size on hover */
+  }
+  

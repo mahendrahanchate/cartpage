@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+     
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: red; */
+}
+a {
+    text-decoration: none;
+}
+img.small {
+    max-height: 8rem;
+    width: 100%;
+}
+button{
+    padding: 0.3rem;
+    border: 0.1rem #404040 solid;
+    background-color: #f0c040;
+    width: 100%;
+    cursor: pointer;
+}
+button.add {
+    background-color: #13a306;
+    width: 1.5rem;
+}
+button.remove {
+    background-color: #f04040;
+    width: 1.5rem;
+}
+.p-1{
+    padding: 1rem;
+}
+button.badge{
+    background-color: #f04040;
+    border: none;
+    color: #ffffff;
+    width: 1.5rem;
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.row.center{
+    align-items: center;
+    /* background-color: rgb(233, 107, 107); */
+}
+.col-1{
+    flex-basis: 100%;
+}
+.col-2{
+    flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+    .col-1{
+        flex: 1;
+    }
+    .col-2{
+        flex: 2;
+    }
+}
+.block{
+    background-color: #bee8f7;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.text-right {
+    text-align: right;
+}
+
+.header-links{
+    display: flex;
+}
+
+.header-links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.header-links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 15px;
+}
+
+.header-links ul li a:hover {
+    color: #fffc3c;
+}
+.Gear {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  
+  .Gear .line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  .Gear .line:nth-child(1) {
+    border-bottom: 10px solid rgb(255, 255, 255);
+    transform: rotateX(35deg) rotateY(-45deg);
+    animation: rotate1 1s linear infinite;
+  }
+  
+  .Gear .line:nth-child(2) {
+    border-bottom: 10px solid rgb(240, 255, 77);
+    transform: rotateX(50deg) rotateY(10deg);
+    animation: rotate2 2s linear infinite;
+  }
+  .Gear .line:nth-child(3) {
+    border-bottom: 10px solid rgb(17, 255, 0);
+    transform: rotateX(35deg) rotateY(55deg);
+    animation: rotate3 3s linear infinite;
+  }
+  
+  @keyframes rotate1 {
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2 {
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3 {
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }}
+
+  .Head-ing{
+    font-size: 30px;
+  }
